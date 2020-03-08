@@ -59,12 +59,20 @@
 				586C4CA524137B6B00A29A3B /* AppDelegate.swift */,
 				586C4CA724137B6B00A29A3B /* SceneDelegate.swift */,
 				586C4CA924137B6B00A29A3B /* ViewController.swift */,
+				586C4CB92414C62D00A29A3B /* New Group */,
 				586C4CAB24137B6B00A29A3B /* Main.storyboard */,
 				586C4CAE24137B6D00A29A3B /* Assets.xcassets */,
 				586C4CB024137B6D00A29A3B /* LaunchScreen.storyboard */,
 				586C4CB324137B6D00A29A3B /* Info.plist */,
 			);
 			path = ViewChangeColor;
+			sourceTree = "<group>";
+		};
+		586C4CB92414C62D00A29A3B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

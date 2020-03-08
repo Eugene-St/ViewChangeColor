@@ -10,13 +10,50 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  @IBOutlet var mainViewColorable: UIView!
+  
+  @IBOutlet var redLabelValue: UILabel!
+  @IBOutlet var greenLabelValue: UILabel!
+  @IBOutlet var blueLabelValue: UILabel!
+  
+  @IBOutlet var redSliderValues: UISlider!
+  @IBOutlet var greenSliderValues: UISlider!
+  @IBOutlet var blueSliderValues: UISlider!
+  
   
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    sliderInitialValues()
+    mainViewColorable.layer.cornerRadius = 20
+    mainViewColorable.layer.borderWidth = 3
+    mainViewColorable.layer.borderColor = CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+    mainViewColorable.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+    mainViewColorable.layer.shadowColor = CGColor(srgbRed: 20.0, green: 154.0, blue: 49.0, alpha: 1.0)
+  
   }
 
-
+  @IBAction func slidersAction() {
+    mainViewColorable.backgroundColor = UIColor(red: CGFloat(redSliderValues.value), green: CGFloat(greenSliderValues.value), blue: CGFloat(blueSliderValues.value), alpha: 1.0)
+    
+    redLabelValue.text = String(Int(redSliderValues.value))
+    greenLabelValue.text = String(Int(greenSliderValues.value))
+    blueLabelValue.text = String(Int(blueSliderValues.value))
+  }
+  
+  private func sliderInitialValues() {
+    redSliderValues.value = 100
+    redSliderValues.minimumValue = 0
+    redSliderValues.maximumValue = 255
+    
+    greenSliderValues.value = 100
+    greenSliderValues.minimumValue = 0
+    greenSliderValues.maximumValue = 255
+    
+    blueSliderValues.value = 50
+    blueSliderValues.minimumValue = 0
+    blueSliderValues.maximumValue = 255
+  }
+  
 }
 
