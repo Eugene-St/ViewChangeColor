@@ -88,8 +88,11 @@ class ViewController: UIViewController {
     mainViewColorable.layer.cornerRadius = 20
     mainViewColorable.layer.borderWidth = 3
     mainViewColorable.layer.borderColor = CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-    mainViewColorable.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
-    mainViewColorable.layer.shadowColor = CGColor(srgbRed: 20.0, green: 154.0, blue: 49.0, alpha: 1.0)
+    mainViewColorable.layer.shadowOffset = .zero
+    mainViewColorable.layer.shadowColor = UIColor.black.cgColor
+    mainViewColorable.layer.shadowOpacity = 1
+    mainViewColorable.layer.shadowRadius = 30
+    
   }
   
   private func buttonInitialValues() {
