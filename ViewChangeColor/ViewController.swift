@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
   
-  @IBOutlet var mainViewColorable: UIView!
+  @IBOutlet var colorViewLabel: UIView!
   
   @IBOutlet var redLabelValue: UILabel!
   @IBOutlet var greenLabelValue: UILabel!
@@ -33,16 +33,18 @@ class ViewController: UIViewController {
     mainViewInitialValues()
     buttonInitialValues()
     
-    redLabelValue.text = String(redSliderValues.value)
-    greenLabelValue.text = String(greenSliderValues.value)
-    blueLabelValue.text = String(blueSliderValues.value)
+    setValue(for: redLabelValue, greenLabelValue, blueLabelValue)
+    
+//    redLabelValue.text = String(redSliderValues.value)
+//    greenLabelValue.text = String(greenSliderValues.value)
+//    blueLabelValue.text = String(blueSliderValues.value)
   
-    mainViewColorable.backgroundColor = UIColor(red: CGFloat(redSliderValues.value/255), green: CGFloat(greenSliderValues.value/255), blue: CGFloat(blueSliderValues.value/255), alpha: 1.0)
+    colorViewLabel.backgroundColor = UIColor(red: CGFloat(redSliderValues.value/255), green: CGFloat(greenSliderValues.value/255), blue: CGFloat(blueSliderValues.value/255), alpha: 1.0)
     
   }
 
   @IBAction func slidersAction() {
-    mainViewColorable.backgroundColor = UIColor(red: CGFloat(redSliderValues.value/255), green: CGFloat(greenSliderValues.value/255), blue: CGFloat(blueSliderValues.value/255), alpha: 1.0)
+    colorViewLabel.backgroundColor = UIColor(red: CGFloat(redSliderValues.value/255), green: CGFloat(greenSliderValues.value/255), blue: CGFloat(blueSliderValues.value/255), alpha: 1.0)
     
     redLabelValue.text = String(Int(redSliderValues.value))
     greenLabelValue.text = String(Int(greenSliderValues.value))
@@ -53,20 +55,31 @@ class ViewController: UIViewController {
     
 //    mainViewColorable.backgroundColor = .white
     
-    if !mainViewColorable.isHidden {
-      view.backgroundColor = mainViewColorable.backgroundColor
-      mainViewColorable.isHidden = true
+    if !colorViewLabel.isHidden {
+      view.backgroundColor = colorViewLabel.backgroundColor
+      colorViewLabel.isHidden = true
       backgroundButton.setTitle("Update Background Color", for: .normal)
       colorsStack.isHidden = true
       valuesStack.isHidden = true
       slidersStack.isHidden = true
     } else {
-      mainViewColorable.isHidden = false
+      colorViewLabel.isHidden = false
       backgroundButton.setTitle("Set Background Color", for: .normal)
       colorsStack.isHidden = false
       valuesStack.isHidden = false
       slidersStack.isHidden = false
-      mainViewColorable.backgroundColor = .white
+      colorViewLabel.backgroundColor = .white
+    }
+  }
+  
+  private func setValue(for labels: UILabel ...) {
+    labels.forEach { label in
+      switch label.tag {
+      case 0: redLabelValue.text = String(redSliderValues.value)
+      case 1: greenLabelValue.text = String(greenSliderValues.value)
+      case 2: blueLabelValue.text = String(blueSliderValues.value)
+      default: break
+      }
     }
   }
   
@@ -85,13 +98,13 @@ class ViewController: UIViewController {
   }
   
   private func mainViewInitialValues() {
-    mainViewColorable.layer.cornerRadius = 20
-    mainViewColorable.layer.borderWidth = 3
-    mainViewColorable.layer.borderColor = CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-    mainViewColorable.layer.shadowOffset = .zero
-    mainViewColorable.layer.shadowColor = UIColor.black.cgColor
-    mainViewColorable.layer.shadowOpacity = 1
-    mainViewColorable.layer.shadowRadius = 30
+    colorViewLabel.layer.cornerRadius = 20
+    colorViewLabel.layer.borderWidth = 3
+    colorViewLabel.layer.borderColor = CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+    colorViewLabel.layer.shadowOffset = .zero
+    colorViewLabel.layer.shadowColor = UIColor.black.cgColor
+    colorViewLabel.layer.shadowOpacity = 1
+    colorViewLabel.layer.shadowRadius = 30
     
   }
   

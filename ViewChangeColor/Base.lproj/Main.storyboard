@@ -57,13 +57,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="42" placeholderIntrinsicHeight="20.5" text="0.88" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUG-FA-GeY">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="42" placeholderIntrinsicHeight="20.5" text="0.88" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUG-FA-GeY">
                                         <rect key="frame" x="0.0" y="35.666666666666629" width="42" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="42" placeholderIntrinsicHeight="20.5" text="0.45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bak-Uu-uhr">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="42" placeholderIntrinsicHeight="20.5" text="0.45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bak-Uu-uhr">
                                         <rect key="frame" x="0.0" y="71" width="42" height="20.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -145,10 +145,10 @@
                         <outlet property="backgroundButton" destination="i4x-hI-UaY" id="Y0p-ij-fLA"/>
                         <outlet property="blueLabelValue" destination="bak-Uu-uhr" id="Cob-GG-B8Z"/>
                         <outlet property="blueSliderValues" destination="Isd-8N-5n2" id="VwQ-Hr-Bjs"/>
+                        <outlet property="colorViewLabel" destination="N4o-Qw-Sqd" id="0zl-Sp-QL0"/>
                         <outlet property="colorsStack" destination="45U-Cc-fqG" id="FwC-9d-Hqg"/>
                         <outlet property="greenLabelValue" destination="PUG-FA-GeY" id="Vpt-FW-Yza"/>
                         <outlet property="greenSliderValues" destination="hNA-Df-Q0g" id="1ef-Ag-3pg"/>
-                        <outlet property="mainViewColorable" destination="N4o-Qw-Sqd" id="0zl-Sp-QL0"/>
                         <outlet property="redLabelValue" destination="sLU-cZ-TAn" id="c9A-t7-zwZ"/>
                         <outlet property="redSliderValues" destination="xae-sK-Ihf" id="KnP-Tw-hrN"/>
                         <outlet property="slidersStack" destination="sXR-vC-CeP" id="q8V-Ui-lUp"/>
