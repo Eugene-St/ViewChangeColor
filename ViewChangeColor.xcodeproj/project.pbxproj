@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		586B3CBE24252A33002574C8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586B3CBD24252A33002574C8 /* MainViewController.swift */; };
 		586C4CA624137B6B00A29A3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C4CA524137B6B00A29A3B /* AppDelegate.swift */; };
 		586C4CA824137B6B00A29A3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C4CA724137B6B00A29A3B /* SceneDelegate.swift */; };
-		586C4CAA24137B6B00A29A3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C4CA924137B6B00A29A3B /* ViewController.swift */; };
+		586C4CAA24137B6B00A29A3B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C4CA924137B6B00A29A3B /* SettingsViewController.swift */; };
 		586C4CAD24137B6B00A29A3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586C4CAB24137B6B00A29A3B /* Main.storyboard */; };
 		586C4CAF24137B6D00A29A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586C4CAE24137B6D00A29A3B /* Assets.xcassets */; };
 		586C4CB224137B6D00A29A3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586C4CB024137B6D00A29A3B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		586B3CBD24252A33002574C8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		586C4CA224137B6B00A29A3B /* ViewChangeColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewChangeColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		586C4CA524137B6B00A29A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		586C4CA724137B6B00A29A3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		586C4CA924137B6B00A29A3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		586C4CA924137B6B00A29A3B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		586C4CAC24137B6B00A29A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		586C4CAE24137B6D00A29A3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		586C4CB124137B6D00A29A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58654F262424AC23001C52B4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				586C4CAB24137B6B00A29A3B /* Main.storyboard */,
+				586C4CB024137B6D00A29A3B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		58654F272424AC31001C52B4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				586C4CAE24137B6D00A29A3B /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		58654F282424AC47001C52B4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				586C4CA524137B6B00A29A3B /* AppDelegate.swift */,
+				586C4CA724137B6B00A29A3B /* SceneDelegate.swift */,
+				586C4CB324137B6D00A29A3B /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		586C4C9924137B6B00A29A3B = {
 			isa = PBXGroup;
 			children = (
@@ -56,23 +85,21 @@
 		586C4CA424137B6B00A29A3B /* ViewChangeColor */ = {
 			isa = PBXGroup;
 			children = (
-				586C4CA524137B6B00A29A3B /* AppDelegate.swift */,
-				586C4CA724137B6B00A29A3B /* SceneDelegate.swift */,
-				586C4CA924137B6B00A29A3B /* ViewController.swift */,
-				586C4CB92414C62D00A29A3B /* New Group */,
-				586C4CAB24137B6B00A29A3B /* Main.storyboard */,
-				586C4CAE24137B6D00A29A3B /* Assets.xcassets */,
-				586C4CB024137B6D00A29A3B /* LaunchScreen.storyboard */,
-				586C4CB324137B6D00A29A3B /* Info.plist */,
+				58654F282424AC47001C52B4 /* SupportingFiles */,
+				586C4CB92414C62D00A29A3B /* ViewControllers */,
+				58654F262424AC23001C52B4 /* Storyboards */,
+				58654F272424AC31001C52B4 /* Source */,
 			);
 			path = ViewChangeColor;
 			sourceTree = "<group>";
 		};
-		586C4CB92414C62D00A29A3B /* New Group */ = {
+		586C4CB92414C62D00A29A3B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				586C4CA924137B6B00A29A3B /* SettingsViewController.swift */,
+				586B3CBD24252A33002574C8 /* MainViewController.swift */,
 			);
-			path = "New Group";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				586C4CAA24137B6B00A29A3B /* ViewController.swift in Sources */,
+				586C4CAA24137B6B00A29A3B /* SettingsViewController.swift in Sources */,
 				586C4CA624137B6B00A29A3B /* AppDelegate.swift in Sources */,
 				586C4CA824137B6B00A29A3B /* SceneDelegate.swift in Sources */,
+				586B3CBE24252A33002574C8 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7NCZ24UXD;
-				INFOPLIST_FILE = ViewChangeColor/Info.plist;
+				INFOPLIST_FILE = ViewChangeColor/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,7 +341,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7NCZ24UXD;
-				INFOPLIST_FILE = ViewChangeColor/Info.plist;
+				INFOPLIST_FILE = ViewChangeColor/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
