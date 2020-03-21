@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		586B3CBE24252A33002574C8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586B3CBD24252A33002574C8 /* MainViewController.swift */; };
+		586B3CC124256774002574C8 /* LabelColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586B3CC024256774002574C8 /* LabelColor.swift */; };
 		586C4CA624137B6B00A29A3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C4CA524137B6B00A29A3B /* AppDelegate.swift */; };
 		586C4CA824137B6B00A29A3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C4CA724137B6B00A29A3B /* SceneDelegate.swift */; };
 		586C4CAA24137B6B00A29A3B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C4CA924137B6B00A29A3B /* SettingsViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		586B3CBD24252A33002574C8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		586B3CC024256774002574C8 /* LabelColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelColor.swift; sourceTree = "<group>"; };
 		586C4CA224137B6B00A29A3B /* ViewChangeColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewChangeColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		586C4CA524137B6B00A29A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		586C4CA724137B6B00A29A3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		586B3CBF2425674A002574C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				586B3CC024256774002574C8 /* LabelColor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		586C4C9924137B6B00A29A3B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		586C4CA424137B6B00A29A3B /* ViewChangeColor */ = {
 			isa = PBXGroup;
 			children = (
+				586B3CBF2425674A002574C8 /* Models */,
 				58654F282424AC47001C52B4 /* SupportingFiles */,
 				586C4CB92414C62D00A29A3B /* ViewControllers */,
 				58654F262424AC23001C52B4 /* Storyboards */,
@@ -173,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586B3CC124256774002574C8 /* LabelColor.swift in Sources */,
 				586C4CAA24137B6B00A29A3B /* SettingsViewController.swift in Sources */,
 				586C4CA624137B6B00A29A3B /* AppDelegate.swift in Sources */,
 				586C4CA824137B6B00A29A3B /* SceneDelegate.swift in Sources */,

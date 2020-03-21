@@ -9,21 +9,16 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-    }
-    
-
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      let settingsVC = segue.destination as! SettingsViewController
-      settingsVC.viewColorFromMainController = view.backgroundColor
-      settingsVC.delegate = self
-    }
+  
+  // MARK: - Navigation
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let settingsVC = segue.destination as! SettingsViewController
+    settingsVC.viewColorFromMainController = view.backgroundColor
+    settingsVC.delegate = self
+  }
 }
 
+// MARK: - Delegate
 extension MainViewController: SettingsViewControllerDelegate {
   func updateColor(_ color: UIColor) {
     view.backgroundColor = color
